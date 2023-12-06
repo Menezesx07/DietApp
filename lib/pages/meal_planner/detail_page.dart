@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../components/meal_planner/detail/description.dart';
+import '../../components/meal_planner/detail/steeps_list.dart';
 import '../../components/meal_planner/detail/title_detail.dart';
 
 class DetailPage extends StatefulWidget {
@@ -17,6 +18,9 @@ class DetailPage extends StatefulWidget {
 }
 
 class _DetailPageState extends State<DetailPage> {
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -93,6 +97,13 @@ class _DetailPageState extends State<DetailPage> {
                         const SizedBox(height: 20),
 
                         const DescriptionDetail(),
+
+                        const Text("Step by Step", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),),
+
+                        const SizedBox(
+                            width: double.infinity,
+                            height: 500,
+                            child: SteepsList())
                       ],
                     ),
                   ),

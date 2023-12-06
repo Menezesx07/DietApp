@@ -1,4 +1,5 @@
-import 'package:diet_app/pages/meal_planner/breakfast_page.dart';
+
+import 'package:diet_app/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,10 +16,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: "Poppins",
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff92A3FD)),
         useMaterial3: true,
       ),
-      home: const BreakfastPage(),
+      home: const SplashScreen(),
     );
   }
 }
